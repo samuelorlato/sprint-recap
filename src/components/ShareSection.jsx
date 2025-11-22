@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 const GradientWrapper = styled.button`
   background: linear-gradient(135deg, #9333ea, #ec4899);
@@ -39,14 +40,14 @@ export default function ShareSection(){
             <hr className="text-muted opacity-25 mb-4"/>
 
             {/* voltar ao inicio */}
-            <a 
-                href="#" 
+            <Link 
+                to="/" 
                 className="text-decoration-none small fw-bold"
                 style={{color:"#d81cdfff"}}
             >
                 <i className="bi bi-arrow-left me-2"></i>
                 Voltar ao Início
-            </a>
+            </Link>
         </div>
         
     )
