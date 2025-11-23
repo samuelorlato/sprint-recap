@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import styled from "styled-components"
+
 
 const GradientWrapper = styled.div`
   min-height: 100vh;
@@ -72,7 +73,7 @@ export default function LandingPage() {
             formato divertido e compartilhável.
           </p>
 
-          <Link to="/recap">
+          <Link to="/wrapped">
             <LightButton className="btn btn-lg px-4 py-3 shadow">
               Veja uma simulação
             </LightButton>
