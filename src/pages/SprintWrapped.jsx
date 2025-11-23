@@ -285,6 +285,16 @@ export default function SprintWrapped() {
     cardColor: "orange-card-plus"
   },
 
+  {
+  type: "final",
+  title: "Sprint Completa!",
+  subtitle: "Mais uma sprint nos livros",
+  icon: (
+<svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trophy-icon lucide-trophy"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"/><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"/><path d="M18 9h1.5a1 1 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/><path d="M6 9H4.5a1 1 0 0 1 0-5H6"/></svg>
+  )
+}
+
+
     // você pode adicionar até 16 páginas aqui
   ];
 
@@ -353,6 +363,14 @@ export default function SprintWrapped() {
                 cardColor={page.cardColor}
             />
 
+            )}
+
+            {page.type === "final" && (
+                <>
+                    <div className="icon-wrap mb-4">{page.icon}</div>
+                    <h3 className="text-white fw-bold">{page.title}</h3>
+                    <p className="text-white-50 mt-2">{page.subtitle}</p>
+                </>
             )}
           </div>
                 <div className="arrow-wrap">
