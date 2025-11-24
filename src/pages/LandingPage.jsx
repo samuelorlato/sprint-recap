@@ -190,7 +190,7 @@ export default function LandingPage() {
           Pronto para reviver sua sprint?
         </h2>
 
-        <Link to="/recap">
+        <Link to="/wrapped">
           <CTAButton className="btn btn-lg text-white px-4 py-3 shadow">
             Ver simulação
           </CTAButton>
