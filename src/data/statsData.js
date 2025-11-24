@@ -30,7 +30,7 @@ export const statsData = [
     {
         id: 5,
         icon: "bi-fire",
-        value: "14",
+        value: "14 dias",
         label: "Sequência",
         subtext: "Pegando fogo!"
     },
